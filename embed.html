@@ -1,3 +1,7 @@
+<?php
+$sub = $_GET ['subtitle'];
+$url = $_GET ['embed'];
+?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -23,7 +27,7 @@
 			var player = jwplayer('uplayer-player');
 player.setup({
 			  sources: [ {
-					file: "https://dh-hd-stream-bot.herokuapp.com/177", label: "HD",
+					file: "<?php echo $url; ?>",, label: "HD",
 					type: "video/mp4"
 					},{
 					file: "https://mlauahr4tc.poiuytrewqasdfghjkl.cyou/403%20Forbidden.mp4", label: "SD",
